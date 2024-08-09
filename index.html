@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado de Pequenos Produtores Rurais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mercado de Pequenos Produtores Rurais</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma iniciativa que apoia pequenos produtores rurais, conectando-os diretamente com os consumidores finais. Oferecemos uma plataforma onde os produtores podem vender seus produtos frescos e orgânicos, garantindo qualidade e preços justos para todos.</p>
+    </section>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Direto do campo para sua mesa</h2>
+            <button onclick="scrollToSection('products')">Ver Produtos</button>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Nossos Produtos</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Qual_a_importancia_do_cultivo_do_milho_para_agricultura_brasileira-scaled.jpeg" alt="Milho">
+                <h3>Milho Fresco</h3>
+                <p>Cultivado sem pesticidas, direto da fazenda.</p>
+                <button onclick="showProductDetails('milho')">Saiba Mais</button>
+            </div>
+            <div class="product-card">
+                <img src="soja-1.jpg" alt="Soja">
+                <h3>Soja Orgânica</h3>
+                <p>Alta qualidade para sua saúde e bem-estar.</p>
+                <button onclick="showProductDetails('soja')">Saiba Mais</button>
+            </div>
+            <div class="product-card">
+                <img src="55.jpg" alt="Trigo">
+                <h3>Trigo Integral</h3>
+                <p>Perfeito para sua padaria ou cozinha.</p>
+                <button onclick="showProductDetails('trigo')">Saiba Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>ENTRE EM CONTATO PARA FAZER SEU PEDIDO</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <img src="download.png" alt="programação" class="rodape__logo" />
+        <ul class="rodape__lista">
+            <li class="lista__link">
+                <a href="https://www.sistemafaep.org.br/agrinho/">AGRINHO 2024</a>
+            </li>
+        </ul>
+        <p class="rodape__texto">® 2024 - COLÉGIO ABRAHAM LINCOLN - KALORÉ - NRE APUCARANA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

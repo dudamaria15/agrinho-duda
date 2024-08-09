@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #524d10;
+    color: #ffffff;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('WhatsApp\ Image\ 2024-08-08\ at\ 21.12.37.jpeg') no-repeat center center/cover;
+    height: 400px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero button {
+    padding: 0.5rem 1rem;
+    font-size: 1.0rem;
+    color:#000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero button:hover {
+    background-color: #e0e0e0;
+}
+
+section {
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.0em;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.product-card {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 1rem 0;
+}
+
+.product-card button {
+    padding: 0.5rem 1rem;
+    background-color:#524d10;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-card button:hover {
+    background-color:#524d10;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5rem;
+    background-color:#524d10;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color:#524d10;
+}
+
+footer {
+    background-color:#524d10;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+}
+
+.rodape__logo {
+    max-width: 200px;
+  }
+  
+  .rodape__lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .rodape__lista li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .rodape__lista a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .rodape__lista a:hover {
+    text-decoration: underline;
+  }
+  
+  .rodape__texto {
+    margin-top: 2px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
